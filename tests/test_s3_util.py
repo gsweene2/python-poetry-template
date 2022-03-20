@@ -1,4 +1,3 @@
-from xmlrpc import client
 from python_poetry_template import s3_util
 
 from mock import Mock, patch
