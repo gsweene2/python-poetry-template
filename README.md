@@ -32,13 +32,13 @@ poetry install
 
 ## Run Tests
 
-```
+```bash
 poetry run pytest
 ```
 
 ## Setting up the precommit hook
 
-```
+```bash
 poetry run pre-commit sample-config > .pre-commit-config.yaml
 poetry run pre-commit install
 ```
