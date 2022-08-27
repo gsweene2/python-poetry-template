@@ -24,7 +24,9 @@ def test_list_objects__when_multi_obj_in_bucket__should_return_multi_obj():
     # Arrange
     # Mock the s3_client with a return value on chained method calls
     mock_s3_client = MagicMock()
-    mock_s3_client.get_paginator().paginate().build_full_result.return_value = {"Contents": [{"key": "some_key_value"}, {"key2": "some_key_value2"}]}
+    mock_s3_client.get_paginator().paginate().build_full_result.return_value = {
+        "Contents": [{"key": "some_key_value"}, {"key2": "some_key_value2"}]
+    }
     # This also works:
     # mock_s3_client.get_paginator.return_value.paginate.return_value.build_full_result.return_value = {"Contents": []}
 
